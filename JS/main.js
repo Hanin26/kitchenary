@@ -10,6 +10,12 @@ window.addEventListener("load", function () {
     window.scrollTo(0, 0);
 });
 
+document.querySelectorAll(".protected-img").forEach((img) => {
+    img.addEventListener("contextmenu", (e) => {
+      e.preventDefault();
+    });
+});
+
 addEventListener("scroll", () => {
     let current = "home";
 
